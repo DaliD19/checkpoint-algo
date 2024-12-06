@@ -1,0 +1,22 @@
+ALGORITHM Sentence
+VAR
+    i,c,w,v:INTEGER=0
+    s:STRING
+    T:array_name : ARRAY_OF char;
+BEGIN
+    read(s);
+    WHILE (T[i]<>.) DO
+        IF (T[i]=" ") THEN
+        w++;
+        else IF (T[i]="a","o","i","u","e") THEN
+        c++;
+        v++;
+        else IF (T[i]=char) THEN
+        c++;
+        END_IF
+        i++;
+        print(w);
+        print(c);
+        print(v);
+    END_WHILE
+END
